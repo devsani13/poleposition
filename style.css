@@ -1,0 +1,213 @@
+/* Index, corridas e pilotos */
+
+/* Configuração geral da página */
+html {
+	scroll-behavior: smooth;
+}
+body {
+	background-color: #f5f2f29;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+	text-align: justify;
+}
+/* Configuração do cabeçalho */
+header {
+	position: relative;
+    background-color: #e10600;
+    color: #fff;
+	line-height: 0.3;
+    padding: 20px;
+	margin-left: center;
+    margin-right: center;
+	text-align: center;
+	flex: 1;
+}
+#logof1{
+	position: absolute;
+	top: 20px;/* eixo Y*/
+	left: 40px;/* eixo X*/
+	width:200px;
+	height:100px;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: -5px;
+	padding-left: 15px;
+	flex: 1;
+}
+.logo {
+	width: 200px;
+	height: 100px;
+}
+/* Configuração dos títulos (h1) */
+header h1 {
+	position: relative;
+	padding-top: 30px;
+    margin: 0;
+	line-height: 1;
+	font-size: 100px;
+}
+/* Configuração geral da lista não ordenada */
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	z-index: 3;
+}
+/* Configuração dos itens da lista */
+header ul li {
+	line-height: 0;
+    margin-right: 20px;
+	margin-top: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li {
+	position: relative;
+	float: left;
+}
+
+.menu li a:hover {
+	color: #541210;
+}
+
+.menu li ul {
+	position: absolute;
+	top: 9px;
+	left: 0px;
+	display: none;
+	background-color: #b8231f;
+	border-radius: 10px;
+}
+
+.menu li:hover ul, .menu li.over ul {
+	display: block;
+}
+
+.menu li ul li {
+	display: block;
+	width: 126px;
+	margin: 10px;
+}
+
+/* Configuração do conteúdo principal do site (main) */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+/* Configuração geral das sessões */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.farina {
+	padding: 0px;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px 5px #e3e3e3;
+}
+.sobre{
+	margin-right: 20px;
+	width: 120px;
+	height: 120px;
+	padding: 0px;
+	border-radius: 999px;
+	box-shadow: 5px 5px 5px 5px #e3e3e3;
+}
+/* Configuração do formulário de contato */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type="submit"] {
+    background-color: #e10600;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ab0803;
+}
+/* Configuração do rodapé da página */
+footer {
+    background-color: #b8231f;
+    padding: 20px;
+    text-align: center;
+	color: #fff;
+}
+/* Configuração das linhas que separam as sessões */
+hr {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+}
+
+/* Botão para voltar ao topo da página */
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #F00;
+    text-decoration: none;
+	border-radius: 20px;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
+
+  /* Quebra a linha assim que um dos flex itens não puder mais ser compactado. */
+.wrap {
+  flex-wrap: wrap;
+}

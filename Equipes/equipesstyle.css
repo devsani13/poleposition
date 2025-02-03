@@ -1,0 +1,237 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f5f2f29;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+	text-align: justify;
+}
+
+header {
+	position: relative;
+    background-color: #e10600;
+    color: #fff;
+	line-height: 0.3;
+    padding: 20px;
+	margin-left: center;
+    margin-right: center;
+	text-align: center;
+	flex: 1;
+}
+#logof1{
+	position: absolute;
+	top: 20px;/* eixo Y*/
+	left: 40px;/* eixo X*/
+	width:200px;
+	height:100px;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-top: 20px;
+	padding-right: 15px;
+	padding-bottom: -5px;
+	padding-left: 15px;
+	flex: 1;
+}
+.logo {
+	width: 200px;
+	height: 100px;
+}
+/* Configuração dos títulos (h1) */
+header h1 {
+	position: relative;
+	padding-top: 30px;
+    margin: 0;
+	line-height: 1;
+	font-size: 100px;
+}
+/* Configuração geral da lista não ordenada */
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	z-index: 3;
+}
+/* Configuração dos itens da lista */
+header ul li {
+	line-height: 0;
+    margin-right: 20px;
+	margin-top: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li {
+	position: relative;
+	float: left;
+}
+
+.menu li a:hover {
+	color: #541210;
+}
+
+.menu li ul {
+	position: absolute;
+	top: 9px;
+	left: 0px;
+	display: none;
+	background-color: #b8231f;
+	border-radius: 10px;
+}
+
+.menu li:hover ul, .menu li.over ul {
+	display: block;
+}
+
+.menu li ul li {
+	display: block;
+	width: 126px;
+	margin: 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid red;
+  margin: 20px 0;
+}
+
+.logoe {
+	width: 216px;
+	height: 121px;
+	border-radius: 10px;
+}
+
+/* Configuração do rodapé da página */
+footer {
+    background-color: #b8231f;
+    padding: 20px;
+    text-align: center;
+	color: #fff;
+}
+
+/* Configuração do slideshow */
+.slideshow-container {
+  max-width: 524px;
+  position: relative;
+  margin: auto;
+  box-shadow: 0px 0px 15px #000000;
+  border-radius: 10px;
+  background-color: #e10600;
+}
+
+/* Botões seguinte e anterior */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+}
+
+/* Posicione o "próximo botão" à direita */
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Ao passar o mouse, adicione uma cor de fundo preta com um pouco de transparência */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Texto da legenda */
+.text {
+  background-color: #e10600;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 9px;
+  position: center;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.text2 {
+  background-color: #e10600;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 9px;
+  position: center;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.pais {
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px #000000;
+}
+
+.active, .dot:hover {
+  background-color: #541210;
+}
+
+/*Animação de desbotamento */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #F00;
+    text-decoration: none;
+	border-radius: 20px;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+}
